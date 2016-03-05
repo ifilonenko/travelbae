@@ -1,0 +1,1 @@
+web: bundle exec passenger start --friendly-error-pages -p $PORT --max-pool-size=5 --min-instances=3
