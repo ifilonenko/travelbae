@@ -1,0 +1,14 @@
+<div class="Panel">
+  <h1>Login</h1>
+  <%= form_for User.new, url: '/sessions' do |u| %>
+    <label>
+      <span>Username</span>
+      <%= u.text_field :username, placeholder: 'username' %>
+    </label>
+    <label>
+      <span>Password</span>
+      <%= u.password_field :password, placeholder: 'password' %>
+    </label>
+    <%= u.submit 'Login' %>
+  <% end %>
+</div>
